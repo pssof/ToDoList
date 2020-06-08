@@ -15,5 +15,8 @@ namespace ToDoList.Models
 
         public DateTime DataFimTarefa { get; set; }
 
+        public string DescricaoTarefa { get; set; }
+
+        public string StatusTarefa { get; set; }
     }
 }
