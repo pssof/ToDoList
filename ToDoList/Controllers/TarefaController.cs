@@ -16,11 +16,13 @@ namespace ToDoList.Controllers
             var tarefas = new TarefaDao().Buscar();
             return View(tarefas);
         }
+        //Efetuar correções ViewBag incorreta
         public ActionResult Novo()
         {
             ViewBag.Tarefas = new SelectList(new TarefaDao().Buscar().ToDictionary(t => t.TarefaID, t => t.NomeTarefa), "Key", "Value");
             return View();
         }
+        //Efetuar correções ViewBag incorreta
         public ActionResult Editar(int id)
         {
             ViewBag.Tarefas = new SelectList(new TarefaDao().Buscar().ToDictionary(t => t.TarefaID, t => t.NomeTarefa), "Key", "Value");
