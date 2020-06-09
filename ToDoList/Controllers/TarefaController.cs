@@ -14,7 +14,7 @@ namespace ToDoList.Controllers
         public ActionResult Index()
         {
             var tarefas = new TarefaDao().Buscar();
-            return View();
+            return View(tarefas);
         }
         public ActionResult Novo()
         {
