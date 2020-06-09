@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using ToDoList.Models;
 
 namespace ToDoList.Context
 {
@@ -12,5 +13,6 @@ namespace ToDoList.Context
         {
 
         }
+        public virtual DbSet<Tarefa> Tarefas { get; set; }
     }
 }

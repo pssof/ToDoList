@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ToDoList.Models.Tarefa>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeTarefa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInicioTarefa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataFimTarefa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescricaoTarefa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusTarefa)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeTarefa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataInicioTarefa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataFimTarefa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescricaoTarefa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusTarefa)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TarefaID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TarefaID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TarefaID })
+        </td>
+    </tr>
+}
+
+</table>
