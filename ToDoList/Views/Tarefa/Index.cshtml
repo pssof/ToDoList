@@ -50,8 +50,8 @@
             @Html.DisplayFor(modelItem => item.StatusTarefa)
         </td>
         <td>
-            @Html.ActionLink("Detalhar", "Detalhe", new { id = item.TarefaID }, new { @class = "btn btn-outline-info" })
-            @Html.ActionLink("Alterar", "Editar", new { id = item.TarefaID }, new { @class = "btn btn-outline-primary" })
+            @Html.ActionLink("Detalhar", "Detalhe", new { id = item.TarefaID }, new { @class = "btn btn-outline-info" }) |
+            @Html.ActionLink("Alterar", "Editar", new { id = item.TarefaID }, new { @class = "btn btn-outline-primary" }) |
             @Html.ActionLink("Excluir", "Excluir", new { id = item.TarefaID }, new { @class = "btn btn-outline-danger" })
         </td>
     </tr>
