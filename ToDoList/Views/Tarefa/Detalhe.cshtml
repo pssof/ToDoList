@@ -1,0 +1,59 @@
+﻿@model ToDoList.Models.Tarefa
+
+@{
+    ViewBag.Title = "Detalhe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhe</h2>
+
+<div>
+    <h4>Tarefa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeTarefa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeTarefa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataInicioTarefa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataInicioTarefa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataFimTarefa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataFimTarefa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoTarefa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoTarefa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusTarefa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusTarefa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TarefaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

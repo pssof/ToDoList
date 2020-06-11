@@ -20,14 +20,16 @@ namespace ToDoList.Models
         [Required(ErrorMessage = "O nome da tarefa é obrigatório!")]
         public string NomeTarefa { get; set; }
 
+        [DataType(DataType.Date, ErrorMessage = "Data em formato inválido - DD/MM/AAAA")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Data de Início")]
         [Required(ErrorMessage = "Data de início é obrigatória!")]
         public DateTime DataInicioTarefa { get; set; }
 
+        [DataType(DataType.Date, ErrorMessage = "Data em formato inválido - DD/MM/AAAA")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Data de Término")]
-        [Required(ErrorMessage = "Data de início é obrigatória!")]
+        [Required(ErrorMessage = "Data de término é obrigatória!")]
         public DateTime DataFimTarefa { get; set; }
 
         [Display(Name = "Descrição da Tarefa")]
