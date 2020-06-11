@@ -20,10 +20,12 @@ namespace ToDoList.Models
         [Required(ErrorMessage = "O nome da tarefa é obrigatório!")]
         public string NomeTarefa { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Data de Início")]
         [Required(ErrorMessage = "Data de início é obrigatória!")]
         public DateTime DataInicioTarefa { get; set; }
-                
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Data de Término")]
         [Required(ErrorMessage = "Data de início é obrigatória!")]
         public DateTime DataFimTarefa { get; set; }
