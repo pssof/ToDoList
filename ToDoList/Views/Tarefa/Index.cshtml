@@ -5,11 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Agendamento de Tarefas</h2>
+<br />
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Nova Tarefa", "Novo", "Produtos", new { @class = "btn btn-info" })
 </p>
+<br />
 <table class="table">
     <tr>
         <th>
@@ -48,9 +50,9 @@
             @Html.DisplayFor(modelItem => item.StatusTarefa)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TarefaID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TarefaID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TarefaID })
+            @Html.ActionLink("Detalhar", "Detalhe", new { id = item.TarefaID }, new { @class = "btn btn-outline-info" })
+            @Html.ActionLink("Alterar", "Editar", new { id = item.TarefaID }, new { @class = "btn btn-outline-primary" })
+            @Html.ActionLink("Excluir", "Excluir", new { id = item.TarefaID }, new { @class = "btn btn-outline-danger" })
         </td>
     </tr>
 }

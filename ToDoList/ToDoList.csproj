@@ -175,6 +175,7 @@
     <Content Include="Views\Shared\_Layout - Cópia .cshtml" />
     <Content Include="Views\Home\Teste.cshtml" />
     <Content Include="Views\Tarefa\Index.cshtml" />
+    <Content Include="Views\Tarefa\Novo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
