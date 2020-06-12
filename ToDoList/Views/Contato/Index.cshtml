@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ToDoList.Models.Contato>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Novo")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeContato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefoneFixoContato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CelularContato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailContato)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeContato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefoneFixoContato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CelularContato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailContato)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ContatoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ContatoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ContatoID })
+        </td>
+    </tr>
+}
+
+</table>
