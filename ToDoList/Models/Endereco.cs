@@ -7,8 +7,11 @@ using System.Web;
 
 namespace ToDoList.Models
 {
+
+    [Table("Endereços")]
     public class Endereco
     {
+        [Key]
         public int EnderecoID { get; set; }
 
         [Display(Name = "Nome do Contato")]

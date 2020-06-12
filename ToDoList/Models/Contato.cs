@@ -7,6 +7,7 @@ using System.Web;
 
 namespace ToDoList.Models
 {
+    [Table("Contatos")]
     public class Contato
     {
         [Key]
