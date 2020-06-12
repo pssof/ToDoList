@@ -188,8 +188,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\DataContext.cs" />
+    <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TarefaController.cs" />
+    <Compile Include="Dao\ContatoDao.cs" />
     <Compile Include="Dao\DaoBase.cs" />
     <Compile Include="Dao\TarefaDao.cs" />
     <Compile Include="Global.asax.cs">
@@ -232,6 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Contato\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
