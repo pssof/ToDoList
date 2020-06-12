@@ -230,6 +230,7 @@
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\Contato\Novo.cshtml" />
     <Content Include="Views\Contato\Editar.cshtml" />
+    <Content Include="Views\Contato\Detalhar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
