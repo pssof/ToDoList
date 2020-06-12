@@ -193,6 +193,7 @@
     <Compile Include="Controllers\TarefaController.cs" />
     <Compile Include="Dao\ContatoDao.cs" />
     <Compile Include="Dao\DaoBase.cs" />
+    <Compile Include="Dao\EnderecoDao.cs" />
     <Compile Include="Dao\TarefaDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
