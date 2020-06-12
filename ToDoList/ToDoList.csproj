@@ -231,6 +231,8 @@
     <Content Include="Views\Contato\Novo.cshtml" />
     <Content Include="Views\Contato\Editar.cshtml" />
     <Content Include="Views\Contato\Detalhar.cshtml" />
+    <Content Include="Views\Contato\_Endereco.cshtml" />
+    <Content Include="Views\Endereco\Novo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -240,7 +242,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Endereco\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
