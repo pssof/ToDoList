@@ -14,5 +14,7 @@ namespace ToDoList.Context
 
         }
         public virtual DbSet<Tarefa> Tarefas { get; set; }
+        public virtual DbSet<Contato> Contatos { get; set; }
+        public virtual DbSet<Endereco> Enderecos { get; set; }
     }
 }

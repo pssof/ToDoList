@@ -11,7 +11,7 @@ namespace ToDoList.Models
     {
         [Key]
         public int ContatoID { get; set; }
-
+        
         [MaxLength(60)]
         [Column(TypeName = "VARCHAR")]
         [Display(Name = "Nome do Contato")]
@@ -33,6 +33,6 @@ namespace ToDoList.Models
         [Display(Name = "E-mail")]
         public string EmailContato { get; set; }
 
-
+        public virtual ICollection<Endereco> ListaEnderecos { get; set; }
     }
 }
