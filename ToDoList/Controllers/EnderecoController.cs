@@ -13,13 +13,14 @@ namespace ToDoList.Controllers
         // GET: Endereco
         public ActionResult Index()
         {
-            var listaEnderecos = new EnderecoDao().Listar();
+            var listaEnderecos = new EnderecoDao().Buscar();
 
             return View(listaEnderecos);
         }
 
         public ActionResult Novo()
         {
+            ViewBag.Contatos = new SelectList(new ContatoDao().Buscar().ToDictionary(x => x.ContatoID, x => x.NomeContato), "Key", "Value");
             return View();
         }
 
@@ -46,6 +47,7 @@ namespace ToDoList.Controllers
         public ActionResult Detalhar(int id)
         {
             Endereco objEndereco = new EnderecoDao().Buscar(id);
+            ViewBag.Endereco = id;;
             return View(objEndereco);
         }
 

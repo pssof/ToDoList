@@ -41,7 +41,7 @@ namespace ToDoList.Controllers
             new TarefaDao().Gravar(objTarefa);
             return RedirectToAction("Index", "Tarefa");
         }
-        public ActionResult Detalhe(int id)
+        public ActionResult Detalhar(int id)
         {
             Tarefa tarefa = new TarefaDao().Buscar(id);
             return View(tarefa);

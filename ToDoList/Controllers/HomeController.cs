@@ -17,5 +17,9 @@ namespace ToDoList.Controllers
         {
             return View();
         }
+        public ActionResult Principal()
+        {
+            return View();
+        }
     }
 }

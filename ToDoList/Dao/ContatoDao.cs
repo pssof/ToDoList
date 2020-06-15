@@ -35,7 +35,7 @@ namespace ToDoList.Dao
             banco.SaveChanges();
         }
 
-        public IEnumerable<Contato> Listar()
+        public IEnumerable<Contato> Buscar()
         {
             return banco.Contatos.ToList();
         }

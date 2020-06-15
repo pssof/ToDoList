@@ -30,12 +30,12 @@ namespace ToDoList.Dao
 
         public void Excluir(int id)
         {
-            Endereco obj = Buscar(id);
-            banco.Enderecos.Remove(obj);
+            Endereco objEndereco = Buscar(id);
+            banco.Enderecos.Remove(objEndereco);
             banco.SaveChanges();
         }
 
-        public IEnumerable<Endereco> Listar()
+        public IEnumerable<Endereco> Buscar()
         {
             return banco.Enderecos.ToList();
         }

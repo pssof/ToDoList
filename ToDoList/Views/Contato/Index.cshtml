@@ -5,11 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Cadastro de Contatos</h2>
+<br />
 
 <p>
-    @Html.ActionLink("Create New", "Novo")
+    @Html.ActionLink("Nova Tarefa", "Novo", "Contatos", new { @class = "btn btn-info" })
 </p>
+<br />
 <table class="table">
     <tr>
         <th>
@@ -42,9 +44,9 @@
             @Html.DisplayFor(modelItem => item.EmailContato)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ContatoID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ContatoID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ContatoID })
+            @Html.ActionLink("Detalhar", "Detalhar", new { id = item.ContatoID }, new { @class = "btn btn-outline-info" }) |
+            @Html.ActionLink("Alterar", "Editar", new { id = item.ContatoID }, new { @class = "btn btn-outline-primary" }) |
+            @Html.ActionLink("Excluir", "Excluir", new { id = item.ContatoID }, new { @class = "btn btn-outline-danger" })
         </td>
     </tr>
 }

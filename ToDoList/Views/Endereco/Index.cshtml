@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ToDoList.Models.Endereco>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Endereço", "Novo", "Endereco", new { @class = "btn btn-info" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CepEndereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeRua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroEndereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeBairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UfEstado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComplementoEndereco)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CepEndereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeRua)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroEndereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeBairro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeCidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UfEstado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComplementoEndereco)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EnderecoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EnderecoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EnderecoID })
+        </td>
+    </tr>
+}
+
+</table>

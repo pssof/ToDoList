@@ -171,6 +171,7 @@
     <Content Include="assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="assets\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Endereco.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -191,10 +192,12 @@
     <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\EnderecoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PublicidadeController.cs" />
     <Compile Include="Controllers\TarefaController.cs" />
     <Compile Include="Dao\ContatoDao.cs" />
     <Compile Include="Dao\DaoBase.cs" />
     <Compile Include="Dao\EnderecoDao.cs" />
+    <Compile Include="Dao\PublicidadeDao.cs" />
     <Compile Include="Dao\TarefaDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -202,6 +205,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contato.cs" />
     <Compile Include="Models\Endereco.cs" />
+    <Compile Include="Models\Publicidade.cs" />
     <Compile Include="Models\Tarefa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -226,13 +230,15 @@
     <Content Include="Views\Tarefa\Index.cshtml" />
     <Content Include="Views\Tarefa\Novo.cshtml" />
     <Content Include="Views\Tarefa\Editar.cshtml" />
-    <Content Include="Views\Tarefa\Detalhe.cshtml" />
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\Contato\Novo.cshtml" />
     <Content Include="Views\Contato\Editar.cshtml" />
+    <Content Include="Views\Endereco\ListarEnderecos.cshtml" />
+    <Content Include="Views\Tarefa\Detalhar.cshtml" />
     <Content Include="Views\Contato\Detalhar.cshtml" />
-    <Content Include="Views\Contato\_Endereco.cshtml" />
+    <Content Include="Views\Endereco\Index.cshtml" />
     <Content Include="Views\Endereco\Novo.cshtml" />
+    <Content Include="Views\Home\Principal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -242,6 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Publicidade\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

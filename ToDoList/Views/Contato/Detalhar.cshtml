@@ -46,6 +46,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ContatoID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Alterar", "Editar", new { id = Model.ContatoID }, new { @class = "btn btn-success" })  |
+    @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-info" })
 </p>

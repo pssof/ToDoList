@@ -13,12 +13,12 @@ namespace ToDoList.Controllers
         // GET: Contato
         public ActionResult Index()
         {
-            var listaContatos = new ContatoDao().Listar();
+            var listaContatos = new ContatoDao().Buscar();
             return View(listaContatos);
         }
 
         public ActionResult Novo()
-        {
+        {            
             return View();
         }
 

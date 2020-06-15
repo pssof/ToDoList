@@ -40,7 +40,7 @@ namespace ToDoList.Models
         [Required(ErrorMessage = "O nome do bairro é obrigatório!")]
         public string NomeBairro { get; set; }
 
-        [MaxLength(9)]
+        [MaxLength(40)]
         [Column(TypeName = "VARCHAR")]
         [Display(Name = "Cidade")]
         [Required(ErrorMessage = "O nome da cidade é obrigatório!")]
@@ -52,7 +52,7 @@ namespace ToDoList.Models
         [Required(ErrorMessage = "A unidade federativa é obrigatório!")]
         public string UfEstado { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(40)]
         [Column(TypeName = "VARCHAR")]
         [Display(Name = "Complemento")]
         public string ComplementoEndereco { get; set; }
