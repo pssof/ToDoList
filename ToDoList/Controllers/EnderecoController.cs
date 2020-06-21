@@ -33,6 +33,7 @@ namespace ToDoList.Controllers
 
         public ActionResult Editar(int id)
         {
+            ViewBag.Contatos = new SelectList(new ContatoDao().Buscar().ToDictionary(x => x.ContatoID, x => x.NomeContato), "Key", "Value");
             Endereco objEndereco = new EnderecoDao().Buscar(id);
             return View(objEndereco);
         }

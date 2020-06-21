@@ -233,7 +233,6 @@
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\Contato\Novo.cshtml" />
     <Content Include="Views\Contato\Editar.cshtml" />
-    <Content Include="Views\Endereco\ListarEnderecos.cshtml" />
     <Content Include="Views\Tarefa\Detalhar.cshtml" />
     <Content Include="Views\Contato\Detalhar.cshtml" />
     <Content Include="Views\Endereco\Index.cshtml" />
@@ -241,6 +240,7 @@
     <Content Include="Views\Home\Principal.cshtml" />
     <Content Include="Views\Publicidade\Index.cshtml" />
     <Content Include="Views\Endereco\Detalhar.cshtml" />
+    <Content Include="Views\Endereco\Editar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

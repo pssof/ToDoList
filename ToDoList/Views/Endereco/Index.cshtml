@@ -66,9 +66,9 @@
         @Html.DisplayFor(modelItem => item.ComplementoEndereco)
     </td>
     <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.EnderecoID }) |
-        @Html.ActionLink("Details", "Detalhar", new { id = item.EnderecoID }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.EnderecoID })
+        @Html.ActionLink("Detalhar", "Detalhar", new { id = item.EnderecoID }, new { @class = "btn btn-outline-info" }) |
+        @Html.ActionLink("Alterar", "Editar", new { id = item.EnderecoID }, new { @class = "btn btn-outline-primary" }) |
+        @Html.ActionLink("Excluir", "Excluir", new { id = item.EnderecoID }, new { @class = "btn btn-outline-danger" }) 
     </td>
 </tr>
 }
