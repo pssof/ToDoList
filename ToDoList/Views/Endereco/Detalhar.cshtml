@@ -1,0 +1,83 @@
+﻿@model ToDoList.Models.Endereco
+
+@{
+    ViewBag.Title = "Detalhar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhar</h2>
+
+<div>
+    <h4>Endereco</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.objContato.NomeContato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.objContato.NomeContato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CepEndereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CepEndereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeRua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeRua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroEndereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroEndereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeBairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeBairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UfEstado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UfEstado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComplementoEndereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComplementoEndereco)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EnderecoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

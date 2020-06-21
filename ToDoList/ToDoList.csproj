@@ -240,6 +240,7 @@
     <Content Include="Views\Endereco\Novo.cshtml" />
     <Content Include="Views\Home\Principal.cshtml" />
     <Content Include="Views\Publicidade\Index.cshtml" />
+    <Content Include="Views\Endereco\Detalhar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

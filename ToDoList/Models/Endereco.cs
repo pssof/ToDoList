@@ -57,6 +57,8 @@ namespace ToDoList.Models
         [Display(Name = "Complemento")]
         public string ComplementoEndereco { get; set; }
 
+        [ForeignKey("ContatoID")]
+
         public virtual Contato objContato { get; set; }
     }
 }

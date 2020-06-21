@@ -13,6 +13,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.ContatoID)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.CepEndereco)
         </th>
         <th>
@@ -37,34 +40,37 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CepEndereco)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NomeRua)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NumeroEndereco)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NomeBairro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NomeCidade)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UfEstado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ComplementoEndereco)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EnderecoID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EnderecoID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EnderecoID })
-        </td>
-    </tr>
+<tr>
+    <th>
+        @Html.DisplayFor(modelItem => item.objContato.NomeContato)
+    </th>
+    <td>
+        @Html.DisplayFor(modelItem => item.CepEndereco)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NomeRua)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NumeroEndereco)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NomeBairro)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NomeCidade)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UfEstado)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ComplementoEndereco)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.EnderecoID }) |
+        @Html.ActionLink("Details", "Detalhar", new { id = item.EnderecoID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.EnderecoID })
+    </td>
+</tr>
 }
 
 </table>
